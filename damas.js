@@ -13,8 +13,8 @@ function criaTabuleiro() {
 		for (let j = 0; j < tamanho; j++) {
 			let celula = document.createElement('td');
 			linha.append(celula);
-			celula.style.width = '${tamanhoCelula}px';
-			celula.style.height = '${tamanhoCelula}px';
+			celula.style.width = `${tamanhoCelula}px`;
+			celula.style.height = `${tamanhoCelula}px`;
 			if (i % 2 == j % 2) {
 				celula.style.backgroundColor = 'black';
 				if ( i * 8 + j <= 24) {
